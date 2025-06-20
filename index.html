@@ -6,53 +6,132 @@
   <title>ARPA Produtora</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #0e0e0e; color: #f5f5f5; scroll-behavior: smooth; }
-    header, section, footer { padding: 60px 20px; max-width: 1200px; margin: auto; animation: fadeIn 1s ease-in; }
-    header { background: linear-gradient(145deg, #1e1e1e, #000); text-align: center; border-bottom: 2px solid #e91e63; }
-    header img { max-width: 220px; height: auto; margin-bottom: 20px; }
-    a.button { display: inline-block; background: #e91e63; color: white; padding: 12px 24px; text-decoration: none; border-radius: 30px; font-weight: bold; transition: background 0.3s ease; margin: 10px; }
-    a.button:hover { background: #c2185b; }
-    h2 { color: #e91e63; font-size: 2rem; margin-bottom: 20px; border-left: 6px solid #e9c46a; padding-left: 10px; }
-    ul { list-style: none; padding: 0; }
-    ul li::before { content: "🎧 "; }
-    .columns { display: flex; flex-wrap: wrap; gap: 30px; }
-    .column { flex: 1; min-width: 250px; background: #1c1c1c; padding: 20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); transition: transform 0.3s ease; }
-    .column:hover { transform: translateY(-5px); }
-    footer { text-align: center; font-size: 0.9rem; background: #111; color: #999; padding: 30px 20px; border-top: 2px solid #e91e63; }
-    a { color: #e91e63; text-decoration: none; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    @media (max-width: 768px) { .columns { flex-direction: column; } }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #f5f5f5;
+      background-color: #111;
+    }
+    header, section, footer {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    header {
+      background: #000;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    a.button {
+      display: inline-block;
+      background: #e91e63;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 10px;
+    }
+    h2 {
+      color: #e91e63;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "🎧 ";
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .column {
+      flex: 1;
+      min-width: 250px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      background: #000;
+    }
+    a {
+      color: #e91e63;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo ARPA Produtora">
-    <a class="button" href="https://wa.me/+5551994020440">Agende no WhatsApp</a>
+    <h1>ARPA Produtora</h1>
+    <p>Estúdio completo para gravações, transmissões e produções audiovisuais.</p>
+    <a class="button" href="https://wa.me/+5551994020440">Agende agora no WhatsApp</a>
     <a class="button" href="https://calendar.app.google/Yjufx72b6Hp7jHnr8">Ver Agenda</a>
   </header>
+
   <section>
     <h2>Sobre o Estúdio</h2>
     <p>Ambiente profissional, acusticamente tratado, climatizado e equipado com iluminação controlada. Ideal para podcasts, videoclipes, entrevistas, aulas e mais.</p>
   </section>
+
   <section>
     <h2>Serviços</h2>
     <div class="columns">
-      <div class="column"><h3>Gravação</h3><ul><li>Podcast / Videocast</li><li>Locução</li><li>Videoaula</li><li>Instrumentos e vozes</li></ul></div>
-      <div class="column"><h3>Transmissão ao Vivo</h3><ul><li>Lives musicais</li><li>Eventos e entrevistas</li></ul></div>
-      <div class="column"><h3>Produção & Edição</h3><ul><li>Videoclipes</li><li>Roteiros</li><li>Vídeos publicitários</li><li>Edição de áudio e vídeo</li></ul></div>
+      <div class="column">
+        <h3>Gravação</h3>
+        <ul>
+          <li>Podcast / Videocast</li>
+          <li>Locução</li>
+          <li>Videoaula</li>
+          <li>Instrumentos e vozes</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Transmissão ao Vivo</h3>
+        <ul>
+          <li>Lives musicais</li>
+          <li>Eventos e entrevistas</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Produção & Edição</h3>
+        <ul>
+          <li>Videoclipes</li>
+          <li>Roteiros</li>
+          <li>Vídeos publicitários</li>
+          <li>Edição de áudio e vídeo</li>
+        </ul>
+      </div>
     </div>
   </section>
+
   <section>
     <h2>Equipamentos</h2>
-    <ul><li>Microfones Condensadores</li><li>Microfones de lapela sem fio</li><li>Placa de som SSL 2</li><li>Câmera DSLR Canon SL2</li><li>Webcams Logitech C930e</li></ul>
+    <ul>
+      <li>Microfones Condensadores</li>
+      <li>Microfones de lapela sem fio</li>
+      <li>Placa de som SSL 2</li>
+      <li>Câmera DSLR Canon SL2</li>
+      <li>Webcams Logitech C930e</li>
+    </ul>
   </section>
+
   <section>
     <h2>Contato</h2>
     <p><strong>Endereço:</strong> Rua Santa Cruz, 88 – Niterói, Canoas – RS</p>
     <p><strong>Telefone:</strong> <a href="tel:+5551994020440">(51) 99402-0440</a></p>
     <p><strong>Email:</strong> <a href="mailto:produtoraarpa@gmail.com">produtoraarpa@gmail.com</a></p>
   </section>
+
   <footer>
     <p>&copy; 2025 ARPA Produtora – Todos os direitos reservados.</p>
   </footer>
